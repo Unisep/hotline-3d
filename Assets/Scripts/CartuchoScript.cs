@@ -5,22 +5,12 @@ public class CartuchoScript : MonoBehaviour
 {
 	public int pente = 5;
 
-	private AudioSource source;
-
-	void Start ()
-	{
-		this.source = GetComponent<AudioSource> ();
-	}
-
-	void Update ()
-	{
-	}
+	public AudioClip pickUp;
 
 	void OnTriggerEnter (Collider col)
 	{
 		if (col.gameObject.CompareTag ("Player")) {
-			// ver sobre o volume
-			source.Play ();
+			AudioSource.PlayClipAtPoint (pickUp, col.gameObject.transform.position);
 
 			ControladorMunicaoScript municao = col.gameObject.GetComponent<ControladorMunicaoScript> ();
 			municao.recarregar (this.pente);

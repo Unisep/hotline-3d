@@ -3,7 +3,6 @@ using System.Collections;
 
 public class InimigoScript : MonoBehaviour
 {
-
 	enum EstadoInimigo
 	{
 		PARADO,
@@ -99,7 +98,7 @@ public class InimigoScript : MonoBehaviour
 
 	void OnTriggerEnter (Collider col)
 	{
-		if (col.gameObject.CompareTag ("Bala")) {
+		if (col.gameObject.CompareTag ("PlayerBullet")) {
 			vida.levouTiro ();
 			Destroy (col.gameObject);
 

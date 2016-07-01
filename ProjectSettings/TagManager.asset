@@ -10,6 +10,8 @@ TagManager:
   - Controller
   - Explosion
   - metal
+  - PlayerBullet
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX

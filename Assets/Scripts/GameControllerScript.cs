@@ -42,5 +42,4 @@ public class GameControllerScript : MonoBehaviour
 	}
 
 	// previnir própria bala matar o player.
-	// colocar um objeto de "botão do elevador"
 }

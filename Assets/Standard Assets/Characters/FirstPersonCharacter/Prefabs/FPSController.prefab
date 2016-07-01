@@ -45,10 +45,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.37, y: 1.4774437, z: 9.38}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
+  m_LocalPosition: {x: 0.6, y: 1.4774437, z: 55.565}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_Children:
   - {fileID: 400002}
   m_Father: {fileID: 0}
@@ -184,7 +184,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -302,8 +302,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01428703eea6b53469e1b739b51aa3c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalVida: 10
+  totalVida: 100
   mostrador: {fileID: 0}
+  mostradorImage: {fileID: 0}
 --- !u!114 &11440636
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -316,6 +317,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabBala: {fileID: 187980, guid: 2a66f896e1743405ca2174534d908d88, type: 2}
+  damageImage: {fileID: 0}
+  flashSpeed: 5
+  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!114 &11478916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -327,7 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b06e53f9c24bac47a817826cc6dc0da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalBalas: 20
+  totalBalas: 5
   mostrador: {fileID: 0}
 --- !u!143 &14300000
 CharacterController:

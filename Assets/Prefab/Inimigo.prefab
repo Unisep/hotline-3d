@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d0f7f8965b90604bb3a3b887667cd4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabBala: {fileID: 187980, guid: 2a66f896e1743405ca2174534d908d88, type: 2}
+  prefabBala: {fileID: 130502, guid: 92b28d3b6ec715744b11c8b252379bef, type: 2}
   prefabMunicao: {fileID: 111238, guid: 0d0edbfc57b70454883b18aa7a039371, type: 2}
   prefabVida: {fileID: 100002, guid: 26d8831dd22ac4a67a089bde65690252, type: 2}
   mira: {fileID: 491238}

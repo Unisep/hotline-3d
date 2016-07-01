@@ -4,23 +4,12 @@ using System.Collections;
 public class VidaScript : MonoBehaviour
 {
 	public int poderKit = 10;
-
-	private AudioSource source;
-
-	void Start ()
-	{
-		this.source = GetComponent<AudioSource> ();
-	}
-
-	void Update ()
-	{
-	}
+	public AudioClip pickUp;
 
 	void OnTriggerEnter (Collider col)
 	{
 		if (col.gameObject.CompareTag ("Player")) {
-			// ver sobre o volume
-			source.Play ();
+			AudioSource.PlayClipAtPoint (pickUp, col.gameObject.transform.position);
 
 			ControladorVidaScript vida = col.gameObject.GetComponent<ControladorVidaScript> ();
 			vida.recuperarVida (this.poderKit);

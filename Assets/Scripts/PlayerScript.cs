@@ -34,9 +34,7 @@ public class PlayerScript : MonoBehaviour
 				Rigidbody body = bala.GetComponent<Rigidbody> ();
 				body.velocity = bala.transform.TransformDirection (Vector3.forward * 50);
 			} else {
-				// GameObject bala = (GameObject)Instantiate (prefabBala, cam.transform.position, cam.transform.rotation);
-				// BalaScript script = bala.GetComponent<BalaScript> ();
-				// script.semBalas ();
+				((GameObject)prefabBala).GetComponent<BalaScript> ().semBalas ();
 			}
 		}
 
@@ -52,7 +50,7 @@ public class PlayerScript : MonoBehaviour
 
 	void OnTriggerEnter (Collider col)
 	{
-		if (col.gameObject.CompareTag ("Bala")) {
+		if (col.gameObject.CompareTag ("EnemyBullet")) {
 			damaged = true;
 			Destroy (col.gameObject);
 

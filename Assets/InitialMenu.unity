@@ -618,7 +618,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 167, y: 56}
-  m_SizeDelta: {x: 280, y: 30}
+  m_SizeDelta: {x: 300, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1753871870
 MonoBehaviour:
@@ -652,7 +652,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Created by: @brunoocasali, Jo\xE3o Vanin"
+  m_Text: 'Created by: @brunoocasali, @jhonyvanin'
 --- !u!222 &1753871871
 CanvasRenderer:
   m_ObjectHideFlags: 0
